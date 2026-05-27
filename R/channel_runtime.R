@@ -127,6 +127,14 @@ channel_apply_skill_routing <- function(prompt, message, agent = NULL, session =
   paste(c(hint_lines, "", prompt), collapse = "\n")
 }
 
+#' Extract candidate local file paths mentioned in a text message
+#'
+#' Exported so other front-ends (e.g. the console in \pkg{aisdk}) can reuse the
+#' channel's local-path extraction for attachment handling.
+#' @param text A character string to scan for local file paths.
+#' @return A character vector of candidate local paths (possibly empty).
+#' @keywords internal
+#' @export
 channel_extract_local_paths <- function(text) {
   if (is.null(text) || !nzchar(text)) {
     return(character(0))
