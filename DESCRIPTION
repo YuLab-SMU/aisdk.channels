@@ -1,0 +1,20 @@
+Package: aisdk.channels
+Title: Messaging Channel Integrations for the 'aisdk' Toolkit
+Version: 0.1.0
+Authors@R: person("Yonghe", "Xia", , "xiayh17@gmail.com", role = c("aut", "cre"))
+Description: Messaging-channel integrations for the 'aisdk' toolkit. Provides a
+    channel runtime and adapters that connect 'aisdk' agents to instant
+    messaging platforms (such as Feishu/Lark), including webhook handling,
+    event processing, per-conversation session stores, and document ingestion.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: aisdk, httr2, jsonlite, rlang, R6, digest, openssl, httpuv,
+        curl, callr, processx, base64enc, tools, utils
+Suggests: pdftools, testthat (>= 3.0.0)
+Remotes: YuLab-SMU/aisdk
+Config/testthat/edition: 3
+URL: https://github.com/YuLab-SMU/aisdk.channels
+BugReports: https://github.com/YuLab-SMU/aisdk.channels/issues
+Depends: R (>= 4.1.0)
